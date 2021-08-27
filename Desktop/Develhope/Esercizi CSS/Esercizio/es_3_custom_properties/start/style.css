@@ -1,0 +1,38 @@
+:root
+{
+    --size: 150px;
+    --sfondo: rgb(124, 212, 171);
+    --palla: rgb(79, 0, 168);
+}
+
+body {
+    
+
+    background-color: var(--sfondo);
+    animation: bgchange 3s 1 ease-in-out;
+    
+    
+}
+
+@keyframes bgchange {
+    from {background-color: #050505;}
+    to {background-color: --sfondo;}
+
+}
+.ball {
+    width: 150px;
+    height: var(--size);
+    background-color: var(--palla);
+    border-radius: 100px;
+    animation: ball1 3s 1;
+
+}
+
+@keyframes ball1 {
+    from {width: 10px;}
+    to {width: --size;}
+    from {height: 10px;}
+    to {width: --size;}
+    from {background-color: white;}
+    to {background-color: --palla;}
+}
