@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background: #efefef;
+    width: 200px;
+    height: 100%;
+}
+
+.brand {
+    display: flex;
+    margin: 25%;
+    padding: 50px;
+    background-color: tomato;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: inset 5px violet;
+}
+
+aside ul {
+    flex: 1;
+    list-style: none;
+}
+
+aside ul li {
+    padding: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside ul li a:hover{
+    color: slateblue;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user img {
+    border-radius: 100px;
+}
