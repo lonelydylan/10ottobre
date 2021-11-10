@@ -1,0 +1,9 @@
+<h2>Develhope Shop</h2>
+<div *ngFor="let hero of eroi" class="container">
+  <img src="{{ hero.img }}" alt="naruto" />
+  <h2>{{ hero.title }}</h2>
+  <p>
+    €{{ hero.price}}<span><button (click)="onSelect(hero)">Show Details!</button></span>
+  </p>
+
+</div>
